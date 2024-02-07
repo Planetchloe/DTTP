@@ -1,0 +1,193 @@
+/* mobile.css */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1, p {
+    flex: 1; /* Make both h2 and p take equal space */
+    max-width: 80%; /* Set a maximum width for better responsiveness */
+}
+
+p {
+    color : brown;
+}
+
+.mytitle {
+    color : white;
+    
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+}
+
+.mytitle h1 {
+    height : 500px;
+    margin-bottom: 0; /* 원하는 간격으로 조절 */
+    padding-bottom : 5px;
+}
+
+.mytitle button {
+    margin-top: 0; /* 원하는 간격으로 조절 */
+    padding-top : 5px;
+}
+
+.mytitle > button {
+    width: 200px;
+    height : 50px;
+    background-color :transparent;
+    color : white;
+    border : 1px solid white;
+    border-radius: 5px;
+}
+
+.mycards {
+    width : 1200px;
+    margin : 30px auto 0px auto;
+}
+/* Flex*/
+
+h2 {
+    color: #3498db;
+    margin-right: 1rem; /* about me와 p 태그 사이 간격 조절 */
+}
+
+p {
+    color: #555;
+}
+
+/* 다른 스타일들 ... */
+
+nav {
+    background-color: #555;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#contact-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-info a {
+    color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /* mobile devices */
+    body {
+        background-color: tan;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* small ipads and small android tablets */
+    body {
+        background-color: teal;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    /* laptops and and small screens */
+    body {
+        background-color: #efeee7;;
+    }
+    h1, h2{
+        text-align: center;
+        color: black;
+    }
+    ul,li {
+        text-align: center;
+        color: white;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    /* large screens and desktops */
+    body {
+        background-color: #efeee7;;
+    }
+}
+
+@media screen and (min-width: 1201px) and (orientation: landscape){
+    /* large LCD screens and beyond */
+    body {
+        background-color: #efeee7;;
+    }
+}
