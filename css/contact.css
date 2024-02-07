@@ -1,29 +1,89 @@
+/* mobile.css */
+
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #efeee7;
-    font-family:  Georgia,"Times New Roman",Times,serif;
-    color: #333333;
 }
 
 header {
-    background-color: #333333;
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-header h1 {
-    color : #eee;
-    font-size: 28px;
-    margin: ;
-    padding: ;
+nav {
+    background-color: #2980b9;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 24px;
+    color: #3498db;
 }
 
-.container {
-    width : 1024px;
-    margin : 0 auto;
+p {
+    color: #555;
+}
+
+footer {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#contact-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-info a {
+    color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
 
 /* Float the specified elements to the left */
